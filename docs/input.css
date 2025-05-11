@@ -2,24 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#footer-logo, #footer-links {
-    margin-left: 9vw;
+#footer-logo,
+#footer-links {
+  margin-left: 9vw;
 }
 
 @media (max-width: 1600px) {
-  #footer-logo, #footer-links {
+  #footer-logo,
+  #footer-links {
     margin-left: 7vw;
   }
 }
 @media (max-width: 1480px) {
-  #footer-logo, #footer-links {
+  #footer-logo,
+  #footer-links {
     margin-left: 5vw;
   }
 }
 
 @media (max-width: 1194px) {
-  #footer-logo, #footer-links {
+  #footer-logo,
+  #footer-links {
     margin-left: 3vw;
   }
   #footer-wrapper {
@@ -28,7 +31,17 @@
 }
 
 @media (max-width: 954px) {
-  #footer-logo, #footer-links {
+  #footer-logo,
+  #footer-links {
     margin-left: 0vw;
+  }
+  /* #footer-links {
+    flex-wrap: wrap;
+  } */
+}
+
+@media (max-width: 540px) {
+  #footer-links {
+    flex-wrap: wrap;
   }
 }

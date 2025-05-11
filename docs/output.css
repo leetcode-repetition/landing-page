@@ -590,10 +590,6 @@ video {
   width: 1.25rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-auto {
   width: auto;
 }
@@ -604,10 +600,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -644,10 +636,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .gap-6 {
@@ -723,5 +711,15 @@ video {
 @media (max-width: 954px) {
   #footer-logo, #footer-links {
     margin-left: 0vw;
+  }
+
+  /* #footer-links {
+    flex-wrap: wrap;
+  } */
+}
+
+@media (max-width: 540px) {
+  #footer-links {
+    flex-wrap: wrap;
   }
 }
