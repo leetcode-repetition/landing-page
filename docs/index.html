@@ -8,28 +8,33 @@
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
-    />
-    <script src="style.js" defer></script> -->
+    /> -->
+    <script src="style.js" defer></script>
     <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
     <title>LeetCode Repetition</title>
   </head>
   <body class="flex flex-col min-h-screen">
-    <navbar class="flex h-16 bg-gray-500 content-center w-full justify-between items-center px-10">
+    <navbar
+      class="fixed flex h-16 bg-gray-500 content-center w-full justify-between items-center px-10"
+    >
       <div id="nav-logo">
-        <div class="flex items-center gap-2">
-          <img
-            src="./static/leetcode-repetition.png"
-            alt="LeetCode Repetition Extension"
-            class="h-16 w-auto"
-          />
-          <!-- <h3 class="text-xl">
-            <span class="text-primary">LeetCode Repetition</span>
-          </h3> -->
-        </div>
+        <button onclick="scrollToTop()" class="cursor-pointer">
+          <div class="flex items-center">
+            <img
+              src="./static/leetcode-repetition.png"
+              alt="LeetCode Repetition Extension"
+              class="h-14 mt-1 w-auto"
+            />
+            <!-- <h3 class="text-xl">
+              <span class="text-primary">LeetCode Repetition</span>
+            </h3> -->
+          </div>
+        </button>
       </div>
       <div id="nav-sections">
-        <ul>
-          <li><a href="#FAQ" class="hover:text-primary">FAQ</a></li>
+        <ul class="flex gap-5">
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
         </ul>
       </div>
       <div id="nav-links flex-1">
@@ -47,61 +52,137 @@
       </div>
     </navbar>
 
-    <main class="flex-grow">
-      <div id="FAQ">
-        <div class="flex flex-col items-center">
-          <h2 class="text-4xl">Frequently Asked Questions</h2>
-          <p class="text-xl">
-            Find answers to common questions about the LeetCode Repetition web extension.
-          </p>
+    <main class="flex-grow pt-16 mx-8">
+      <div id="Features" class="min-h-[80vh] flex flex-col justify-center">
+        <div class="overflow-x-auto">
+          <table class="table-fixed min-w-full border overflow-hidden">
+            <colgroup>
+              <col class="w-1/5" />
+              <col class="w-1/5" />
+              <col class="w-1/5" />
+              <col class="w-1/5" />
+              <col class="w-1/5" />
+            </colgroup>
+
+            <thead>
+              <tr>
+                <th class="px-6 py-3 text-left text-xs uppercase">Feature</th>
+                <th class="px-6 py-3 text-left text-xs uppercase">LeetCode Repetition</th>
+                <th class="px-6 py-3 text-left text-xs uppercase">Leet Repeet</th>
+                <th class="px-6 py-3 text-left text-xs uppercase">Excel Sheet</th>
+                <th class="px-6 py-3 text-left text-xs uppercase">Written Notes</th>
+              </tr>
+            </thead>
+            <tbody class="bg-card divide-y divide-border">
+              <!-- Row 1 -->
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 1</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                </td>
+              </tr>
+              <!-- Row 2 -->
+              <tr class="bg-muted/50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 2</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                </td>
+              </tr>
+              <!-- Row 3 -->
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 3</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">
+                  <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="max-w-3xl mx-auto space-y-4">
-          <details class="group border rounded-lg overflow-hidden">
-            <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
-              <h3 class="text-lg font-medium">Title 1</h3>
-              <img
-                src="./static/dropdown.svg"
-                alt="Toggle"
-                class="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180"
-              />
-            </summary>
-            <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
-              <p class="text-muted-foreground">Content 1</p>
-            </div>
-          </details>
+      </div>
 
-          <details class="group border rounded-lg overflow-hidden">
-            <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
-              <h3 class="text-lg font-medium">Title 2</h3>
-              <img
-                src="./static/dropdown.svg"
-                alt="Toggle"
-                class="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180"
-              />
-            </summary>
-            <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
-              <p class="text-muted-foreground">Content 2</p>
-            </div>
-          </details>
+      <div id="FAQ" class="min-h-[80vh] flex flex-col justify-center">
+        <div>
+          <div class="flex flex-col items-center">
+            <h2 class="text-4xl">Frequently Asked Questions</h2>
+            <p class="text-xl">
+              Find answers to common questions about the LeetCode Repetition web extension.
+            </p>
+          </div>
+          <div class="max-w-3xl mx-auto space-y-4">
+            <details class="group border rounded-lg overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
+                <h3 class="text-lg font-medium">Title 1</h3>
+                <img
+                  src="./static/dropdown.svg"
+                  alt="Toggle"
+                  class="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180"
+                />
+              </summary>
+              <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
+                <p class="text-muted-foreground">Content 1</p>
+              </div>
+            </details>
 
-          <details class="group border rounded-lg overflow-hidden">
-            <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
-              <h3 class="text-lg font-medium">Title 3</h3>
-              <img
-                src="./static/dropdown.svg"
-                alt="Toggle"
-                class="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180"
-              />
-            </summary>
-            <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
-              <p class="text-muted-foreground">Content 3</p>
-            </div>
-          </details>
+            <details class="group border rounded-lg overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
+                <h3 class="text-lg font-medium">Title 2</h3>
+                <img
+                  src="./static/dropdown.svg"
+                  alt="Toggle"
+                  class="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180"
+                />
+              </summary>
+              <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
+                <p class="text-muted-foreground">Content 2</p>
+              </div>
+            </details>
+
+            <details class="group border rounded-lg overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
+                <h3 class="text-lg font-medium">Title 3</h3>
+                <img
+                  src="./static/dropdown.svg"
+                  alt="Toggle"
+                  class="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180"
+                />
+              </summary>
+              <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
+                <p class="text-muted-foreground">Content 3</p>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="border-t py-8 flex flex-wrap justify-center">
+    <footer class="border-t py-8 flex flex-wrap justify-center mt-10">
       <div id="footer-wrapper" class="flex flex-wrap w-10/12 justify-between gap-6">
         <div id="footer-logo" class="space-y-4 max-w-96">
           <div class="flex items-center gap-2">
@@ -115,8 +196,8 @@
             </h3>
           </div>
           <p class="text-sm">
-            LeetCode Repetition follows your chosen intervals to keep tricky problems fresh, making
-            sure you’re always ready for your next technical interview.
+            The LeetCode Repetition web extension follows your chosen intervals to keep tricky
+            problems fresh, making sure you’re always ready for your next technical interview.
           </p>
         </div>
 
@@ -124,7 +205,7 @@
           <div id="footer-links" class="ml-24 flex justify-around gap-6">
             <div class="space-y-2 flex-1">
               <h4>Support</h4>
-              <ul class="space-y-2">
+              <ul class="space-y-1">
                 <li>
                   <a href="/contact" class="text-sm">Contact</a>
                 </li>
@@ -139,7 +220,7 @@
 
             <div class="space-y-2 flex-1">
               <h4>Download</h4>
-              <ul class="space-y-2">
+              <ul class="space-y-1">
                 <li>
                   <a
                     href="https://chromewebstore.google.com/"
