@@ -11,12 +11,46 @@
     />
     <script src="style.js" defer></script> -->
     <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
-    <title>LeetCode Repetition Extension</title>
+    <title>LeetCode Repetition</title>
   </head>
   <body class="flex flex-col min-h-screen">
+    <navbar class="flex h-16 bg-gray-500 content-center w-full justify-between items-center px-10">
+      <div id="nav-logo">
+        <div class="flex items-center gap-2">
+          <img
+            src="./static/leetcode-repetition.png"
+            alt="LeetCode Repetition Extension"
+            class="h-16 w-auto"
+          />
+          <!-- <h3 class="text-xl">
+            <span class="text-primary">LeetCode Repetition</span>
+          </h3> -->
+        </div>
+      </div>
+      <div id="nav-sections">
+        <ul>
+          <li>hello</li>
+        </ul>
+      </div>
+      <div id="nav-links flex-1">
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/leetcode-repetition" target="_blank" rel="noreferrer">
+            <img src="./static/github.svg" alt="GitHub" class="h-6 w-auto" />
+          </a>
+          <a href="https://www.linkedin.com/in/jacobmurrah/" target="_blank" rel="noreferrer">
+            <img src="./static/linkedin.svg" alt="LinkedIn" class="h-6 w-auto" />
+          </a>
+          <a href="mailto:jacob@murrah.dev" title="Mail">
+            <img src="./static/mail.svg" alt="Mail" class="h-6 w-auto" />
+          </a>
+        </div>
+      </div>
+    </navbar>
+
     <main class="flex-grow">
       <p>Hello World</p>
     </main>
+
     <footer class="border-t py-8 flex flex-wrap justify-center">
       <div id="footer-wrapper" class="flex flex-wrap w-10/12 justify-between gap-6">
         <div id="footer-logo" class="space-y-4 max-w-96">
@@ -25,14 +59,11 @@
               src="./static/leetcode-repetition.png"
               alt="LeetCode Repetition Extension"
               class="h-8 w-auto"
-              width="76"
-              height="24"
             />
             <h3 class="text-xl">
               <span class="text-primary">LeetCode Repetition</span>
             </h3>
           </div>
-
           <p class="text-sm">
             LeetCode Repetition follows your chosen intervals to keep tricky problems fresh, making
             sure you’re always ready for your next technical interview.
@@ -41,7 +72,6 @@
 
         <div class="flex-1">
           <div id="footer-links" class="ml-24 flex justify-around gap-6">
-            <!-- Support section -->
             <div class="space-y-2 flex-1">
               <h4>Support</h4>
               <ul class="space-y-2">
@@ -81,7 +111,6 @@
               </ul>
             </div>
 
-            <!-- Status & social -->
             <div class="space-y-4 flex-1">
               <div class="flex items-center gap-2">
                 <!-- temp! change this to actually monitor status -->
@@ -90,10 +119,13 @@
               </div>
               <div class="flex items-center gap-4">
                 <a href="https://github.com/leetcode-repetition" target="_blank" rel="noreferrer">
-                  <img src="./static/github.svg" alt="GitHub" class="h-5 w-5" />
+                  <img src="./static/github.svg" alt="GitHub" class="h-5 w-auto" />
                 </a>
                 <a href="https://www.linkedin.com/in/jacobmurrah/" target="_blank" rel="noreferrer">
-                  <img src="./static/linkedin.svg" alt="LinkedIn" class="h-5 w-5" />
+                  <img src="./static/linkedin.svg" alt="LinkedIn" class="h-5 w-auto" />
+                </a>
+                <a href="mailto:jacob@murrah.dev" title="Mail">
+                  <img src="./static/mail.svg" alt="Mail" class="h-5 w-auto" />
                 </a>
               </div>
             </div>

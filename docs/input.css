@@ -35,9 +35,6 @@
   #footer-links {
     margin-left: 0vw;
   }
-  /* #footer-links {
-    flex-wrap: wrap;
-  } */
 }
 
 @media (max-width: 540px) {
