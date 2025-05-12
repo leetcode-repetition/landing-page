@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#demo-video {
+}
+
 #footer-logo,
 #footer-links {
   margin-left: 9vw;

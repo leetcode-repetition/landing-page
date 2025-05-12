@@ -1,18 +1,14 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    /> -->
-    <script src="style.js" defer></script>
     <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
+    <script src="style.js" defer></script>
     <title>LeetCode Repetition</title>
   </head>
+
   <body class="flex flex-col min-h-screen">
     <navbar
       class="fixed flex h-16 bg-gray-500 content-center w-full justify-between items-center px-10"
@@ -33,6 +29,7 @@
       </div>
       <div id="nav-sections">
         <ul class="flex gap-5">
+          <li><a href="#Demo">Demo</a></li>
           <li><a href="#Features">Features</a></li>
           <li><a href="#FAQ">FAQ</a></li>
         </ul>
@@ -53,9 +50,40 @@
     </navbar>
 
     <main class="flex-grow pt-16 mx-8">
+      <div id="intro"></div>
+
+      <div id="Demo" class="min-h-[80vh] flex flex-col justify-center">
+        <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center">
+            <h2 class="text-4xl">See It in Action</h2>
+            <p class="text-xl">
+              Watch a quick walkthrough of how the LeetCode Repetition extension works!
+            </p>
+          </div>
+          <div class="max-w-4xl">
+            <video
+              id="demo-video"
+              class="w-full h-auto rounded-xl"
+              controls
+              preload="auto"
+              poster="./static/leetcode-repetition.png"
+            >
+              <source src="./static/demo.mp4" type="video/mp4" />
+              Your browser doesn’t support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </div>
+
       <div id="Features" class="min-h-[80vh] flex flex-col justify-center">
+        <div class="flex flex-col items-center">
+          <h2 class="text-4xl">How LeetCode Repetition Stacks Up</h2>
+          <p class="text-xl">
+            A quick look at why our extension beats alternative methods for keeping problems fresh.
+          </p>
+        </div>
         <div class="overflow-x-auto">
-          <div class="max-w-5xl mx-auto border rounded-xl overflow-hidden">
+          <div class="max-w-5xl mx-auto border rounded-xl overflow-x-auto">
             <table class="table-fixed min-w-full">
               <colgroup>
                 <col class="w-1/5" />
@@ -133,13 +161,15 @@
           <div class="flex flex-col items-center">
             <h2 class="text-4xl">Frequently Asked Questions</h2>
             <p class="text-xl">
-              Find answers to common questions about the LeetCode Repetition web extension.
+              Find answers to common questions about the LeetCode Repetition extension.
             </p>
           </div>
           <div class="max-w-3xl mx-auto space-y-4">
-            <details class="group border rounded-lg overflow-hidden">
+            <details class="group border rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
-                <h3 class="text-lg font-medium">Title 1</h3>
+                <h3 class="text-lg font-medium">
+                  Is the LeetCode Repetition extension free to use?
+                </h3>
                 <img
                   src="./static/dropdown.svg"
                   alt="Toggle"
@@ -147,11 +177,17 @@
                 />
               </summary>
               <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
-                <p class="text-muted-foreground">Content 1</p>
+                <p class="text-muted-foreground">
+                  Yes, the LeetCode Repetition extension is totally free to use - no strings
+                  attached. If you’d like to fuel more features and brighten my day, feel free to
+                  <a href="https://buymeacoffee.com/jmurrah" target="_blank" rel="noreferrer">
+                    buy me a coffee! ☕
+                  </a>
+                </p>
               </div>
             </details>
 
-            <details class="group border rounded-lg overflow-hidden">
+            <details class="group border rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
                 <h3 class="text-lg font-medium">Title 2</h3>
                 <img
@@ -165,7 +201,7 @@
               </div>
             </details>
 
-            <details class="group border rounded-lg overflow-hidden">
+            <details class="group border rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
                 <h3 class="text-lg font-medium">Title 3</h3>
                 <img
@@ -197,8 +233,8 @@
             </h3>
           </div>
           <p class="text-sm">
-            The LeetCode Repetition web extension follows your chosen intervals to keep tricky
-            problems fresh, making sure you’re always ready for your next technical interview.
+            The LeetCode Repetition extension follows your chosen intervals to keep tricky problems
+            fresh, making sure you’re always ready for your next technical interview.
           </p>
         </div>
 
