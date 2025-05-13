@@ -44,6 +44,43 @@ h6,
   font-weight: 700;
 }
 
+.head-underline,
+.link-underline,
+.intro-underline {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.head-underline::after,
+.link-underline::after,
+.intro-underline::after {
+  content: "";
+  position: absolute;
+  right: 1%;
+  bottom: 2px;
+  width: 100%;
+  transform: skew(-12deg) translateY(-50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.head-underline::after {
+  height: 6px;
+  background: theme("colors.primary-color");
+}
+
+.link-underline::after {
+  height: 4px;
+  background: theme("colors.secondary-color");
+}
+
+.intro-underline::after {
+  height: 8px;
+  background: theme("colors.secondary-color");
+}
+
 #footer-logo,
 #footer-links {
   margin-left: 9vw;
