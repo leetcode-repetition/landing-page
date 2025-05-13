@@ -879,9 +879,9 @@ video {
   padding: 1.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-6 {
@@ -1093,7 +1093,7 @@ summary:hover {
     width: 91.66%;
   }
 
-  .navbar-icons {
+  navbar {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
