@@ -17,47 +17,49 @@
 
   <body class="flex flex-col min-h-screen bg-background-color text-text-color">
     <navbar
-      class="fixed flex h-16 bg-white content-center w-full justify-between items-center px-10 border-b-2 border-accent-color"
+      class="fixed h-16 bg-white w-full border-b-2 border-accent-color flex items-center px-4"
     >
-      <div id="nav-logo">
-        <button onclick="scrollToTop()" class="cursor-pointer">
-          <div class="flex items-center">
-            <img
-              src="./static/leetcode-repetition.png"
-              alt="LeetCode Repetition Extension"
-              class="h-14 mt-1 w-auto"
-            />
-            <h3 class="navbar-name text-xl">LeetCode Repetition</h3>
-          </div>
+      <div id="nav-logo" class="flex justify-start gap-2 basis-1/3">
+        <button onclick="scrollToTop()" class="cursor-pointer flex items-center gap-2">
+          <img
+            src="./static/leetcode-repetition.png"
+            alt="LeetCode Repetition Extension"
+            class="h-14 w-auto"
+          />
+          <h3 class="navbar-name text-xl">LeetCode Repetition</h3>
         </button>
       </div>
-      <div id="nav-sections">
-        <ul class="flex gap-5">
-          <li><a href="#Steps">Steps</a></li>
-          <li><a href="#Demo">Demo</a></li>
-          <li><a href="#Features">Features</a></li>
-          <li><a href="#FAQ">FAQ</a></li>
+
+      <div id="nav-sections" class="basis-1/3">
+        <ul class="flex gap-5 font-bold justify-center">
+          <li><a href="#Steps" class="hover:text-primary-color">Steps</a></li>
+          <li><a href="#Demo" class="hover:text-primary-color">Demo</a></li>
+          <li><a href="#Features" class="hover:text-primary-color">Features</a></li>
+          <li><a href="#FAQ" class="hover:text-primary-color">FAQ</a></li>
         </ul>
       </div>
-      <div id="nav-links flex-1">
-        <div class="flex items-center gap-4">
-          <a href="https://github.com/leetcode-repetition" target="_blank" rel="noreferrer">
-            <img src="./static/github.svg" alt="GitHub" class="h-6 w-auto" />
-          </a>
-          <a href="https://www.linkedin.com/in/jacobmurrah/" target="_blank" rel="noreferrer">
-            <img src="./static/linkedin.svg" alt="LinkedIn" class="h-6 w-auto" />
-          </a>
-          <a href="mailto:leetcode-repetition@murrah.dev" title="Mail">
-            <img src="./static/mail.svg" alt="Mail" class="h-6 w-auto" />
-          </a>
-        </div>
+
+      <div id="nav-links" class="flex justify-end gap-4 basis-1/3">
+        <a href="https://github.com/leetcode-repetition" target="_blank" rel="noreferrer">
+          <img src="./static/github.svg" alt="GitHub" class="h-6 w-auto hover:text-primary-color" />
+        </a>
+        <a href="https://www.linkedin.com/in/jacobmurrah/" target="_blank" rel="noreferrer">
+          <img
+            src="./static/linkedin.svg"
+            alt="LinkedIn"
+            class="h-6 w-auto hover:text-primary-color"
+          />
+        </a>
+        <a href="mailto:leetcode-repetition@murrah.dev" title="Mail">
+          <img src="./static/mail.svg" alt="Mail" class="h-6 w-auto hover:text-primary-color" />
+        </a>
       </div>
     </navbar>
 
     <main class="flex-grow pt-16 mx-8">
       <div id="Intro" class="min-h-[90vh] flex flex-col justify-center">
         <div class="flex flex-col items-center text-center gap-5">
-          <h2 class="text-6xl">
+          <h2 id="intro-header" class="text-6xl">
             Master LeetCode Problems with
             <span class="intro-underline text-stroke">Spaced Repetition</span>
           </h2>
@@ -89,7 +91,7 @@
           <div class="max-w-4xl">
             <video
               id="demo-video"
-              class="w-full h-auto rounded-xl"
+              class="w-full h-auto rounded-xl border-2 border-accent-color"
               controls
               preload="auto"
               poster="./static/leetcode-repetition.png"
@@ -109,7 +111,9 @@
           </p>
         </div>
         <div class="overflow-x-auto">
-          <div class="max-w-5xl mx-auto border-2 border-accent-color rounded-xl overflow-x-auto">
+          <div
+            class="max-w-5xl mx-auto border-2 border-accent-color rounded-xl overflow-x-auto bg-white"
+          >
             <table class="table-fixed min-w-full">
               <colgroup>
                 <col class="w-1/5" />
@@ -120,7 +124,7 @@
               </colgroup>
 
               <thead>
-                <tr>
+                <tr class="bg-primary-color">
                   <th class="px-6 py-3 text-left text-xs uppercase">Feature</th>
                   <th class="px-6 py-3 text-left text-xs uppercase">LeetCode Repetition</th>
                   <th class="px-6 py-3 text-left text-xs uppercase">Leet Repeet</th>
@@ -128,52 +132,52 @@
                   <th class="px-6 py-3 text-left text-xs uppercase">Written Notes</th>
                 </tr>
               </thead>
-              <tbody class="bg-card divide-y divide-border border-2 border-accent-color">
-                <tr>
+              <tbody>
+                <tr class="border-y-2 border-accent-color">
                   <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 1</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
                   </td>
                 </tr>
 
-                <tr class="border-2 border-accent-color">
+                <tr class="border-b-2 border-accent-color bg-background-color">
                   <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 2</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
                   </td>
                 </tr>
 
-                <tr class="border-2 border-accent-color">
+                <tr>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 3</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
-                    <img src="./static/cross.svg" alt="cross" class="inline-block h-5 w-5" />
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
                   </td>
                 </tr>
               </tbody>
@@ -193,9 +197,7 @@
           <div class="max-w-3xl mx-auto space-y-4">
             <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
-                <h3 class="text-lg font-medium">
-                  Is the LeetCode Repetition extension free to use?
-                </h3>
+                <p class="text-lg font-medium">Is the LeetCode Repetition extension free to use?</p>
                 <img
                   src="./static/dropdown.svg"
                   alt="Toggle"
@@ -220,7 +222,7 @@
 
             <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
-                <h3 class="text-lg font-medium">What LeetCode problems should I practice?</h3>
+                <p class="text-lg font-medium">What LeetCode problems should I practice?</p>
                 <img
                   src="./static/dropdown.svg"
                   alt="Toggle"
@@ -246,7 +248,7 @@
 
             <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
-                <h3 class="text-lg font-medium">How can I report bugs or suggest features?</h3>
+                <p class="text-lg font-medium">How can I report bugs or suggest features?</p>
                 <img
                   src="./static/dropdown.svg"
                   alt="Toggle"
