@@ -17,7 +17,7 @@
 
   <body class="flex flex-col min-h-screen bg-background-color text-text-color">
     <navbar
-      class="fixed flex h-16 bg-gray-500 content-center w-full justify-between items-center px-10"
+      class="fixed flex h-16 bg-white content-center w-full justify-between items-center px-10 border-b-2 border-accent-color"
     >
       <div id="nav-logo">
         <button onclick="scrollToTop()" class="cursor-pointer">
@@ -27,6 +27,7 @@
               alt="LeetCode Repetition Extension"
               class="h-14 mt-1 w-auto"
             />
+            <h3 class="navbar-name text-xl">LeetCode Repetition</h3>
           </div>
         </button>
       </div>
@@ -55,10 +56,10 @@
 
     <main class="flex-grow pt-16 mx-8">
       <div id="Intro" class="min-h-[90vh] flex flex-col justify-center">
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center gap-5">
           <h2 class="text-6xl">
             Master LeetCode Problems with
-            <span class="text-primary-color intro-underline">Spaced Repetition</span>
+            <span class="intro-underline text-stroke">Spaced Repetition</span>
           </h2>
           <p class="text-xl max-w-3xl">
             The LeetCode Repetition extension turns your consistent practice into lasting mastery.
@@ -69,8 +70,8 @@
       </div>
 
       <div id="Steps" class="min-h-[80vh] flex flex-col justify-center">
-        <div class="flex flex-col items-center">
-          <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center gap-5">
+          <div class="flex flex-col items-center gap-1">
             <h2 class="text-4xl head-underline">How It Works</h2>
             <p class="text-xl">Follow these simple steps to achieve LeetCode mastery!</p>
           </div>
@@ -78,8 +79,8 @@
       </div>
 
       <div id="Demo" class="min-h-[80vh] flex flex-col justify-center">
-        <div class="flex flex-col items-center">
-          <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center gap-5">
+          <div class="flex flex-col items-center gap-1">
             <h2 class="text-4xl head-underline">See It in Action</h2>
             <p class="text-xl">
               Watch a quick walkthrough of how the LeetCode Repetition extension works!
@@ -100,15 +101,15 @@
         </div>
       </div>
 
-      <div id="Features" class="min-h-[80vh] flex flex-col justify-center">
-        <div class="flex flex-col items-center">
+      <div id="Features" class="min-h-[80vh] flex flex-col justify-center gap-5">
+        <div class="flex flex-col items-center gap-1">
           <h2 class="text-4xl head-underline">How LeetCode Repetition Stacks Up</h2>
           <p class="text-xl">
             A quick look at why our extension beats alternative methods for keeping problems fresh.
           </p>
         </div>
         <div class="overflow-x-auto">
-          <div class="max-w-5xl mx-auto border rounded-xl overflow-x-auto">
+          <div class="max-w-5xl mx-auto border-2 border-accent-color rounded-xl overflow-x-auto">
             <table class="table-fixed min-w-full">
               <colgroup>
                 <col class="w-1/5" />
@@ -127,7 +128,7 @@
                   <th class="px-6 py-3 text-left text-xs uppercase">Written Notes</th>
                 </tr>
               </thead>
-              <tbody class="bg-card divide-y divide-border">
+              <tbody class="bg-card divide-y divide-border border-2 border-accent-color">
                 <tr>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 1</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
@@ -144,7 +145,7 @@
                   </td>
                 </tr>
 
-                <tr class="bg-muted/50">
+                <tr class="border-2 border-accent-color">
                   <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 2</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
                     <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
@@ -160,7 +161,7 @@
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="border-2 border-accent-color">
                   <td class="px-6 py-4 whitespace-nowrap text-sm">Feature 3</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm">
                     <img src="./static/check.svg" alt="check" class="inline-block h-5 w-5" />
@@ -183,15 +184,15 @@
 
       <div id="FAQ" class="min-h-[80vh] flex flex-col justify-center">
         <div>
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center gap-1">
             <h2 class="text-4xl head-underline">Frequently Asked Questions</h2>
-            <p class="text-xl">
+            <p class="text-xl mb-5">
               Find answers to common questions about the LeetCode Repetition extension.
             </p>
           </div>
           <div class="max-w-3xl mx-auto space-y-4">
-            <details class="group border rounded-xl overflow-hidden">
-              <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
+            <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
                 <h3 class="text-lg font-medium">
                   Is the LeetCode Repetition extension free to use?
                 </h3>
@@ -201,7 +202,7 @@
                   class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180"
                 />
               </summary>
-              <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
+              <div class="px-6 py-6 bg-accent-color">
                 <p class="text-muted-foreground">
                   Yes, the LeetCode Repetition extension is totally free to use - no strings
                   attached. If you’d like to fuel more features and brighten my day, feel free to
@@ -217,8 +218,8 @@
               </div>
             </details>
 
-            <details class="group border rounded-xl overflow-hidden">
-              <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
+            <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
                 <h3 class="text-lg font-medium">What LeetCode problems should I practice?</h3>
                 <img
                   src="./static/dropdown.svg"
@@ -226,7 +227,7 @@
                   class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180"
                 />
               </summary>
-              <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
+              <div class="px-6 py-6 bg-accent-color">
                 <p class="text-muted-foreground">
                   I'd start with the NeetCode 150 problem list since it covers all the must-know
                   LeetCode patterns! You can follow the
@@ -243,8 +244,8 @@
               </div>
             </details>
 
-            <details class="group border rounded-xl overflow-hidden">
-              <summary class="flex items-center justify-between p-6 cursor-pointer bg-card">
+            <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
                 <h3 class="text-lg font-medium">How can I report bugs or suggest features?</h3>
                 <img
                   src="./static/dropdown.svg"
@@ -252,7 +253,7 @@
                   class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180"
                 />
               </summary>
-              <div class="px-6 py-6 bg-gray-50 dark:bg-gray-500">
+              <div class="px-6 py-6 bg-accent-color">
                 <p class="text-muted-foreground">
                   All bug reports and feature requests should be submitted in the
                   <a
@@ -279,7 +280,9 @@
       </div>
     </main>
 
-    <footer class="border-t py-8 flex flex-wrap justify-center mt-10">
+    <footer
+      class="border-t-2 border-accent-color py-8 flex flex-wrap justify-center mt-10 bg-white"
+    >
       <div id="footer-wrapper" class="flex flex-wrap w-10/12 justify-between gap-6">
         <div id="footer-logo" class="space-y-4 max-w-96">
           <div class="flex items-center gap-2">

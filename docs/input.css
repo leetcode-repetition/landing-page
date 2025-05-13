@@ -44,6 +44,19 @@ h6,
   font-weight: 700;
 }
 
+navbar {
+  z-index: 100;
+}
+
+.navbar-name:hover,
+a:hover {
+  color: theme("colors.primary-color");
+}
+
+/* .link-underline:hover {
+  -webkit-text-stroke: 0.5px #000;
+} */
+
 .head-underline,
 .link-underline,
 .intro-underline {
@@ -79,6 +92,11 @@ h6,
 .intro-underline::after {
   height: 8px;
   background: theme("colors.secondary-color");
+}
+
+.text-stroke {
+  color: theme("colors.primary-color");
+  -webkit-text-stroke: 2px #000;
 }
 
 #footer-logo,
