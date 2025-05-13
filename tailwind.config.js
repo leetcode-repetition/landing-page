@@ -2,11 +2,16 @@ module.exports = {
   content: ['./docs/**/*.{html, js}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        heading: ["GT Walsheim Pro", "sans-serif"],
+      },
       colors: {
-        // 'custom-background': '#0a0a0a',
-        // 'primary-purple': '#a35bff',
-        // 'secondary-gray': '#b5b5b5',
-        // 'accent-purple': '#9000ff'
+        'text-color': '#111827',
+        'background-color': '#F9FAFB',
+        'primary-color': '#FEA116',
+        'secondary-color': '#0BB049',
+        'accent-color': '#B3B3B3'
       }
     },
   },

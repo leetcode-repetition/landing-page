@@ -1,3 +1,37 @@
+@font-face {
+  font-family: "GT Walsheim Pro";
+
+  src:
+    local("GT Walsheim Pro Regular"),
+    local("GTWalsheimProRegular"),
+    url("./static/fonts/GTWalsheimProRegular.woff2") format("woff2"),
+    url("./static/fonts/GTWalsheimProRegular.woff") format("woff"),
+    url("./static/fonts/GTWalsheimProRegular.ttf") format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+
+  src:
+    local("GT Walsheim Pro Bold"),
+    local("GTWalsheimProBold"),
+    url("./static/fonts/GTWalsheimProBold.woff2") format("woff2"),
+    url("./static/fonts/GTWalsheimProBold.woff") format("woff"),
+    url("./static/fonts/GTWalsheimProBold.ttf") format("truetype");
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -154,7 +188,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -624,12 +658,12 @@ video {
   min-height: 80vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .min-h-\[90vh\] {
   min-height: 90vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1\/5 {
@@ -674,14 +708,6 @@ video {
 
 .max-w-96 {
   max-width: 24rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
 }
 
 .flex-1 {
@@ -800,6 +826,11 @@ video {
   border-top-width: 1px;
 }
 
+.bg-background-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
@@ -866,6 +897,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -886,17 +922,17 @@ video {
   line-height: 1rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .font-medium {
   font-weight: 500;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-text-color {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
 .transition-transform {
@@ -909,7 +945,20 @@ video {
   transition-duration: 300ms;
 }
 
-#demo-video {
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-weight: 700;
 }
 
 #footer-logo,

@@ -1,8 +1,47 @@
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src:
+    local("GT Walsheim Pro Regular"),
+    local("GTWalsheimProRegular"),
+    url("./static/fonts/GTWalsheimProRegular.woff2") format("woff2"),
+    url("./static/fonts/GTWalsheimProRegular.woff") format("woff"),
+    url("./static/fonts/GTWalsheimProRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src:
+    local("GT Walsheim Pro Bold"),
+    local("GTWalsheimProBold"),
+    url("./static/fonts/GTWalsheimProBold.woff2") format("woff2"),
+    url("./static/fonts/GTWalsheimProBold.woff") format("woff"),
+    url("./static/fonts/GTWalsheimProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-#demo-video {
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-weight: 700;
 }
 
 #footer-logo,
