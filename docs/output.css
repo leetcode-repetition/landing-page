@@ -1013,7 +1013,7 @@ navbar {
   font-weight: 700;
 }
 
-.navbar-name:hover,
+#nav-logo button:hover,
 a:hover {
   color: #FEA116;
 }
