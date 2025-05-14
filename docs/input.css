@@ -39,6 +39,18 @@ body {
   font-weight: 400;
 }
 
+html,
+body {
+  scroll-padding-top: 200px !important;
+}
+
+@media (max-width: 685px) {
+  html,
+  body {
+    scroll-padding-top: 90px;
+  }
+}
+
 h1,
 h2,
 h3,
