@@ -1,7 +1,7 @@
 function scrollToTop() {
   const currentPath = window.location.pathname;
-  if (currentPath.includes("privacy.html")) {
-    window.location.href = "./index.html";
+  if (currentPath.includes("/privacy")) {
+    window.location.href = "../";
   } else {
     window.scrollTo(0, 0);
     history.replaceState(null, null, window.location.pathname);
@@ -9,44 +9,52 @@ function scrollToTop() {
 }
 
 function loadHeader() {
+  const currentPath = window.location.pathname;
+  const isSubpage = currentPath.includes("/privacy");
+  const basePath = isSubpage ? "../" : "./";
+
   return `
     <div id="nav-logo">
       <button onclick="scrollToTop()">
-        <img src="./static/leetcode-repetition.png" alt="LeetCode Repetition Extension" />
+        <img src="${basePath}static/leetcode-repetition.png" alt="LeetCode Repetition Extension" />
         <h3 class="navbar-name">LeetCode Repetition</h3>
       </button>
     </div>
     <div id="nav-sections">
       <ul>
-        <li><a href="./index.html#Steps">Steps</a></li>
-        <li><a href="./index.html#Demo">Demo</a></li>
-        <li><a href="./index.html#Features">Features</a></li>
-        <li><a href="./index.html#FAQ">FAQ</a></li>
+        <li><a href="${basePath}#Steps">Steps</a></li>
+        <li><a href="${basePath}#Demo">Demo</a></li>
+        <li><a href="${basePath}#Features">Features</a></li>
+        <li><a href="${basePath}#FAQ">FAQ</a></li>
       </ul>
     </div>
     <div id="nav-links">
       <a href="https://github.com/leetcode-repetition" target="_blank" rel="noreferrer">
-        <img src="./static/github.svg" alt="GitHub" />
+        <img src="${basePath}static/github.svg" alt="GitHub" />
       </a>
       <a href="mailto:leetcode-repetition@murrah.dev" title="Mail">
-        <img src="./static/mail.svg" alt="Mail" />
+        <img src="${basePath}static/mail.svg" alt="Mail" />
       </a>
       <a href="https://www.linkedin.com/in/jacobmurrah/" target="_blank" rel="noreferrer">
-        <img src="./static/linkedin.svg" alt="LinkedIn" />
+        <img src="${basePath}static/linkedin.svg" alt="LinkedIn" />
       </a>
       <a href="https://buymeacoffee.com/jmurrah" target="_blank" rel="noreferrer">
-        <img src="./static/coffee.svg" alt="LinkedIn" />
+        <img src="${basePath}static/coffee.svg" alt="LinkedIn" />
       </a>
     </div>
   `;
 }
 
 function loadFooter() {
+  const currentPath = window.location.pathname;
+  const isSubpage = currentPath.includes("/privacy");
+  const basePath = isSubpage ? "../" : "./";
+
   return `
     <div id="footer-wrapper">
       <div id="footer-logo">
         <div>
-          <img src="./static/leetcode-repetition.png" alt="LeetCode Repetition Extension" />
+          <img src="${basePath}static/leetcode-repetition.png" alt="LeetCode Repetition Extension" />
           <h3>LeetCode Repetition</h3>
         </div>
         <p>
@@ -61,8 +69,8 @@ function loadFooter() {
             <h4>Support</h4>
             <ul>
               <li><a href="mailto:leetcode-repetition@murrah.dev">Contact</a></li>
-              <li><a href="./privacy.html">Privacy Policy</a></li>
-              <li><a href="./index.html#FAQ">FAQ</a></li>
+              <li><a href="${basePath}privacy/">Privacy Policy</a></li>
+              <li><a href="${basePath}#FAQ">FAQ</a></li>
             </ul>
           </div>
 
@@ -81,16 +89,16 @@ function loadFooter() {
             </div>
             <div class="social-links">
               <a href="https://github.com/leetcode-repetition" target="_blank" rel="noreferrer">
-                <img src="./static/github.svg" alt="GitHub" />
+                <img src="${basePath}static/github.svg" alt="GitHub" />
               </a>
               <a href="mailto:leetcode-repetition@murrah.dev" title="Mail">
-                <img src="./static/mail.svg" alt="Mail" />
+                <img src="${basePath}static/mail.svg" alt="Mail" />
               </a>
               <a href="https://www.linkedin.com/in/jacobmurrah/" target="_blank" rel="noreferrer">
-                <img src="./static/linkedin.svg" alt="LinkedIn" />
+                <img src="${basePath}static/linkedin.svg" alt="LinkedIn" />
               </a>
               <a href="https://buymeacoffee.com/jmurrah" target="_blank" rel="noreferrer">
-                <img src="./static/coffee.svg" alt="LinkedIn" />
+                <img src="${basePath}static/coffee.svg" alt="LinkedIn" />
               </a>
             </div>
           </div>
