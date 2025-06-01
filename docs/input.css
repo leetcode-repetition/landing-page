@@ -123,7 +123,6 @@ header {
 }
 
 footer {
-  margin-top: 16rem;
   border-top: 2px solid theme("colors.accent-color");
   padding: 2rem 0;
   display: flex;

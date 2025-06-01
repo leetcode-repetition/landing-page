@@ -17,9 +17,236 @@
 
   <body class="flex flex-col min-h-screen bg-background-color text-text-color">
     <header></header>
-    <main class="flex-grow pt-16 mx-8 flex flex-col justify-center">
-      <p>hello world</p>
+
+    <main class="flex-grow pt-24 pb-16 mx-auto max-w-4xl px-6">
+      <!-- Policy Content Starts -->
+      <section class="space-y-6">
+        <!-- Summary -->
+        <div class="bg-primary-color/10 p-6 rounded-lg">
+          <h1 class="text-3xl font-bold mb-2">Privacy Policy for LeetCode Repetition</h1>
+          <p class="text-sm text-gray-500 mb-2">Last updated: May 31, 2025</p>
+          <p class="text-sm text-gray-500 mb-4">
+            <strong>Note:</strong> LeetCode Repetition is not affiliated with, endorsed by, or
+            sponsored by LeetCode, LLC.
+          </p>
+          <div class="text-base leading-relaxed">
+            <p>
+              This Privacy Policy explains how <strong>LeetCode Repetition</strong> (“we,” “us,” or
+              “our”) collects, uses, stores, and shares:
+            </p>
+            <ul class="list-disc ml-6 mb-2">
+              <li>a unique identifier from Google Sign-In (the “Google User ID”);</li>
+              <li>
+                LeetCode session cookies for obtaining the user’s LeetCode username and LeetCode
+                user ID;
+              </li>
+              <li>no other personal data or browsing activity.</li>
+            </ul>
+            <p>
+              We collect these values to recognize users across sessions, store them in a Supabase
+              SQL table, and retain them until a user requests deletion. All data transmissions
+              occur over HTTPS. You can revoke Google Sign-In access or uninstall the extension at
+              any time, and if you sign out of LeetCode, we will stop using your LeetCode session
+              cookies.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1. Introduction -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">1. Introduction</h2>
+          <p>
+            <strong>LeetCode Repetition</strong> (“we,” “us,” or “our”) is a browser extension that
+            helps users revisit challenging LeetCode problems using spaced-repetition techniques.
+            When you install or use our extension, we collect only (1) a unique Google User ID, and
+            (2) your LeetCode username and LeetCode user ID via your active LeetCode session
+            cookies. We do not collect any additional profile or credential information.
+          </p>
+        </article>
+
+        <!-- 2. Information We Collect -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">2. Information We Collect</h2>
+          <ul class="list-disc ml-6 space-y-4">
+            <li>
+              <strong>Google User ID</strong><br />
+              Upon your first Google Sign-In, we request only the <code>openid</code> scope to
+              obtain the “sub” field from the ID token, which is your Google User ID.
+            </li>
+            <li>
+              <strong>LeetCode Session Cookies</strong><br />
+              When you choose to sync your LeetCode account, our extension reads the LeetCode
+              session cookies you already have. We use these cookies only to fetch from LeetCode’s
+              API:
+              <ul class="list-disc ml-6">
+                <li>your LeetCode username</li>
+                <li>your LeetCode user ID</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <!-- 3. How We Use Your Information -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">3. How We Use Your Information</h2>
+          <ul class="list-disc ml-6 space-y-4">
+            <li>
+              <strong>User Identification & Syncing</strong><br />
+              We use the Google User ID to identify you in our Supabase database so that your
+              settings, progress, and preferences can sync across devices.
+            </li>
+            <li>
+              <strong>LeetCode Profile Fetching</strong><br />
+              We use your LeetCode session cookies to fetch your username and user ID so you can
+              import your existing problem list and track solved problems.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 4. Data Retention and Storage -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">4. Data Retention and Storage</h2>
+          <ul class="list-disc ml-6 space-y-4">
+            <li>
+              <strong>Supabase SQL Table</strong><br />
+              Your Google User ID and LeetCode user ID are stored in Supabase. Data is encrypted at
+              rest (AES-256) and in transit (TLS).
+            </li>
+            <li>
+              <strong>Retention Period</strong><br />
+              We retain your Google User ID and LeetCode user ID until you request deletion.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 5. Cookies and Tracking Technologies -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">5. Cookies and Tracking Technologies</h2>
+          <p>
+            We do not use cookies or tracking technologies beyond reading your LeetCode session
+            cookies to fetch your username and user ID. Extension settings (e.g., review
+            preferences) are saved in browser storage accessible only to this extension.
+          </p>
+        </article>
+
+        <!-- 6. Data Security -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">6. Data Security</h2>
+          <ul class="list-disc ml-6 space-y-4">
+            <li>
+              <strong>HTTPS Encryption</strong><br />
+              All communications with Google and LeetCode APIs occur over HTTPS (TLS encryption).
+            </li>
+            <li>
+              <strong>Database Security (Supabase)</strong><br />
+              Supabase encrypts data at rest (AES-256) and in transit (TLS).
+            </li>
+            <li>
+              <strong>Local Browser Storage Protection</strong><br />
+              If you sign out of Google or LeetCode, your Google User ID becomes inaccessible, and
+              LeetCode session cookies are invalidated. Local extension data is cleared on
+              uninstall.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 7. Third-Party Services -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">7. Third-Party Services</h2>
+          <ul class="list-disc ml-6 space-y-4">
+            <li>
+              <strong>Google Sign-In (OAuth 2.0)</strong><br />
+              We use Google’s OAuth 2.0 API to obtain an ID token containing your Google User ID.
+              Only the <code>openid</code> scope is requested.
+            </li>
+            <li>
+              <strong>LeetCode API</strong><br />
+              We use your LeetCode session cookies to call LeetCode’s API and fetch your username
+              and user ID.
+            </li>
+            <li>
+              <strong>Supabase (Database Backend)</strong><br />
+              We store your Google User ID and LeetCode user ID in Supabase. Visit
+              <a href="https://supabase.com/privacy" class="text-primary-color hover:underline"
+                >https://supabase.com/privacy</a
+              >
+              for details.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 8. Your Choices and Rights -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">8. Your Choices and Rights</h2>
+          <ul class="list-disc ml-6 space-y-4">
+            <li>
+              <strong>Revoke Google Sign-In</strong><br />
+              To revoke access, go to your Google Account’s “Security” → “Third-party apps with
+              account access” and remove <strong>LeetCode Repetition</strong>.
+            </li>
+            <li>
+              <strong>Uninstall the Extension</strong><br />
+              Uninstalling removes your Google User ID from local storage; Supabase retains it until
+              you request deletion.
+            </li>
+            <li>
+              <strong>Revoke LeetCode Access</strong><br />
+              To revoke access, clear your LeetCode session cookies or sign out of LeetCode in your
+              browser.
+            </li>
+            <li>
+              <strong>Data Deletion (Supabase)</strong><br />
+              To delete your data from Supabase, email <em>leetcode-repetition@murrah.dev</em> with
+              “Data Deletion Request” in the subject.
+            </li>
+            <li>
+              <strong>Access and Correction</strong><br />
+              You may request a copy or correction of your stored data by contacting us at
+              <em>leetcode-repetition@murrah.dev</em>.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 9. Changes to This Privacy Policy -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">9. Changes to This Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy to reflect changes in our practices or legal
+            requirements. When material changes occur, we will update the “Last updated” date at the
+            top and notify you via an in-extension banner or release notes.
+          </p>
+        </article>
+
+        <!-- 10. Contact Us -->
+        <article class="prose prose-lg">
+          <h2 class="text-2xl font-semibold">10. Contact Us</h2>
+          <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or your
+            data, please contact us at:
+          </p>
+          <ul class="list-disc ml-6">
+            <li>
+              <strong>Email:</strong>
+              <a
+                href="mailto:leetcode-repetition@murrah.dev"
+                class="text-primary-color hover:underline"
+                >leetcode-repetition@murrah.dev</a
+              >
+            </li>
+            <li>
+              <strong>Privacy Policy URL:</strong>
+              <a
+                href="https://leetcode-repetition.murrah.dev/privacy"
+                class="text-primary-color hover:underline"
+                >https://leetcode-repetition.murrah.dev/privacy</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- Policy Content Ends -->
     </main>
+
     <footer></footer>
   </body>
 </html>

@@ -61,6 +61,7 @@ function loadFooter() {
           The LeetCode Repetition extension follows your chosen intervals to keep tricky problems
           fresh, making sure you're always ready for your next technical interview.
         </p>
+        <p>&copy; 2025 LeetCode Repetition. All rights reserved.</p>
       </div>
 
       <div id="footer-content">
