@@ -588,18 +588,6 @@ video {
   display: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -618,6 +606,14 @@ video {
   margin-bottom: 6rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -626,20 +622,12 @@ video {
   margin-left: 1.5rem;
 }
 
-.mb-64 {
-  margin-bottom: 16rem;
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-48 {
+  margin-bottom: 12rem;
 }
 
 .inline-block {
@@ -799,18 +787,9 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-t {
-  border-top-width: 1px;
-}
-
 .border-accent-color {
   --tw-border-opacity: 1;
   border-color: rgb(179 179 179 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
 }
 
 .bg-accent-color {
@@ -946,6 +925,11 @@ video {
   line-height: 1.625;
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
 .text-primary-color {
   --tw-text-opacity: 1;
   color: rgb(254 161 22 / var(--tw-text-opacity, 1));
@@ -956,21 +940,6 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
-}
-
-.underline {
-  text-decoration-line: underline;
-}
-
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -979,138 +948,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.\[oaicite\:0\] {
-  oaicite: 0;
-}
-
-.\[oaicite\:14\] {
-  oaicite: 14;
-}
-
-.\[oaicite\:15\] {
-  oaicite: 15;
-}
-
-.\[oaicite\:17\] {
-  oaicite: 17;
-}
-
-.\[oaicite\:18\] {
-  oaicite: 18;
-}
-
-.\[oaicite\:19\] {
-  oaicite: 19;
-}
-
-.\[oaicite\:20\] {
-  oaicite: 20;
-}
-
-.\[oaicite\:21\] {
-  oaicite: 21;
-}
-
-.\[oaicite\:22\] {
-  oaicite: 22;
-}
-
-.\[oaicite\:24\] {
-  oaicite: 24;
-}
-
-.\[oaicite\:25\] {
-  oaicite: 25;
-}
-
-.\[oaicite\:26\] {
-  oaicite: 26;
-}
-
-.\[oaicite\:27\] {
-  oaicite: 27;
-}
-
-.\[oaicite\:28\] {
-  oaicite: 28;
-}
-
-.\[oaicite\:29\] {
-  oaicite: 29;
-}
-
-.\[oaicite\:2\] {
-  oaicite: 2;
-}
-
-.\[oaicite\:31\] {
-  oaicite: 31;
-}
-
-.\[oaicite\:32\] {
-  oaicite: 32;
-}
-
-.\[oaicite\:33\] {
-  oaicite: 33;
-}
-
-.\[oaicite\:34\] {
-  oaicite: 34;
-}
-
-.\[oaicite\:36\] {
-  oaicite: 36;
-}
-
-.\[oaicite\:37\] {
-  oaicite: 37;
-}
-
-.\[oaicite\:38\] {
-  oaicite: 38;
-}
-
-.\[oaicite\:39\] {
-  oaicite: 39;
-}
-
-.\[oaicite\:3\] {
-  oaicite: 3;
-}
-
-.\[oaicite\:40\] {
-  oaicite: 40;
-}
-
-.\[oaicite\:41\] {
-  oaicite: 41;
-}
-
-.\[oaicite\:4\] {
-  oaicite: 4;
-}
-
-.\[oaicite\:5\] {
-  oaicite: 5;
-}
-
-.\[oaicite\:6\] {
-  oaicite: 6;
-}
-
-.\[oaicite\:7\] {
-  oaicite: 7;
-}
-
-.\[oaicite\:8\] {
-  oaicite: 8;
-}
-
-.\[oaicite\:9\] {
-  oaicite: 9;
 }
 
 body {
