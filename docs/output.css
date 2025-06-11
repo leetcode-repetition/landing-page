@@ -606,12 +606,12 @@ video {
   margin-bottom: 6rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-48 {
+  margin-bottom: 12rem;
 }
 
 .mb-5 {
@@ -620,14 +620,6 @@ video {
 
 .ml-6 {
   margin-left: 1.5rem;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
-.mb-48 {
-  margin-bottom: 12rem;
 }
 
 .inline-block {
