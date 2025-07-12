@@ -15,7 +15,7 @@ npm run css
 ```bash
 npm install -g http-server
 cd docs
-http-server -c-1
+npx http-server -c-1
 ```
 
 ## Format
