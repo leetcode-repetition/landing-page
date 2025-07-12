@@ -1,286 +1,289 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
-    <script src="style.js" defer></script>
-    <title>LeetCode Repetition</title>
-  </head>
 
-  <body class="flex flex-col min-h-screen bg-background-color text-text-color">
-    <header></header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
+  <script src="style.js" defer></script>
+  <title>LeetCode Repetition</title>
+</head>
 
-    <main class="flex-grow pt-16 mx-8">
-      <div id="Intro" class="min-h-screen flex flex-col justify-center">
-        <div class="flex flex-col items-center text-center gap-5">
-          <h2 id="intro-header" class="text-6xl max-w-7xl">
-            Master LeetCode Problems with
-            <span class="intro-underline text-stroke">Spaced Repetition</span>
-          </h2>
-          <p class="text-xl max-w-3xl mb-24">
-            The LeetCode Repetition extension turns your consistent practice into lasting mastery.
-            We use your chosen review schedule for each problem, helping you strengthen your skills
-            and land the job you want.
-          </p>
+<body class="flex flex-col min-h-screen bg-background-color text-text-color">
+  <header></header>
+
+  <main class="flex-grow pt-16 mx-8">
+    <div id="Intro" class="min-h-screen flex flex-col justify-center">
+      <div class="flex flex-col items-center text-center gap-5">
+        <h2 id="intro-header" class="text-6xl max-w-7xl">
+          Master LeetCode Problems with
+          <span class="intro-underline text-stroke">Spaced Repetition</span>
+        </h2>
+        <p class="text-xl max-w-3xl mb-24">
+          The LeetCode Repetition extension turns your consistent practice into lasting mastery.
+          We use your chosen review schedule for each problem, helping you strengthen your skills
+          and land the job you want.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-64">
+      <div id="Steps" class="flex flex-col justify-center">
+        <div class="flex flex-col items-center gap-5">
+          <div class="flex flex-col items-center gap-1">
+            <h2 class="text-4xl head-underline">How It Works</h2>
+            <p class="text-xl">Follow these simple steps to achieve LeetCode mastery!</p>
+            <div id=all-steps-container class="flex w-full mt-4">
+              <div class="step-container">
+                <div class="step-header">
+                  <div class="step-number">
+                    <p><strong>1</strong></p>
+                  </div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-cards">
+                  <p>Solve LeetCode Problem</p>
+                  <img src="./static/lc-problem-accepted.png" />
+                </div>
+              </div>
+              <div class="step-container">
+                <div class="step-header">
+                  <div class="step-number">
+                    <p><strong>2</strong></p>
+                  </div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-cards">
+                  <p>Select Repetition Interval</p>
+                  <img src="./static/lc-problem-accepted.png" />
+                </div>
+              </div>
+              <div class="step-container">
+                <div class="step-header">
+                  <div class="step-number">
+                    <p><strong>3</strong></p>
+                  </div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-cards">
+                  <p>REPEAT!!!</p>
+                  <img src="./static/lc-problem-accepted.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="flex flex-col gap-64">
-        <div id="Steps" class="flex flex-col justify-center">
-          <div class="flex flex-col items-center gap-5">
-            <div class="flex flex-col items-center gap-1">
-              <h2 class="text-4xl head-underline">How It Works</h2>
-              <p class="text-xl">Follow these simple steps to achieve LeetCode mastery!</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="Demo" class="flex flex-col justify-center">
-          <div class="flex flex-col items-center gap-5">
-            <div class="flex flex-col items-center gap-1">
-              <h2 class="text-4xl head-underline">See It in Action</h2>
-              <p class="text-xl">
-                Watch a quick walkthrough of how the LeetCode Repetition extension works!
-              </p>
-            </div>
-            <div class="max-w-4xl">
-              <video
-                id="demo-video"
-                class="w-full h-auto rounded-xl border-2 border-accent-color"
-                controls
-                preload="auto"
-                poster="./static/leetcode-repetition.png"
-              >
-                <source src="./static/demo.mp4" type="video/mp4" />
-                Your browser doesn’t support HTML5 video.
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <div id="Features" class="flex flex-col justify-center gap-5">
+      <div id="Demo" class="flex flex-col justify-center">
+        <div class="flex flex-col items-center gap-5">
           <div class="flex flex-col items-center gap-1">
-            <h2 class="text-4xl head-underline">How LeetCode Repetition Stacks Up</h2>
+            <h2 class="text-4xl head-underline">See It in Action</h2>
             <p class="text-xl">
-              A quick look at why our extension beats alternative methods for making LeetCode
-              patterns stick.
+              Watch a quick walkthrough of how the LeetCode Repetition extension works!
             </p>
           </div>
-          <div class="overflow-x-auto">
-            <div
-              class="max-w-5xl mx-auto border-2 border-accent-color rounded-xl overflow-x-auto bg-white"
-            >
-              <table class="table-fixed min-w-full">
-                <colgroup>
-                  <col class="w-1/5" />
-                  <col class="w-1/5" />
-                  <col class="w-1/5" />
-                  <col class="w-1/5" />
-                  <col class="w-1/5" />
-                </colgroup>
-
-                <thead>
-                  <tr class="bg-primary-color">
-                    <th class="px-6 py-3 text-left text-xs uppercase">Feature</th>
-                    <th class="px-6 py-3 text-left text-xs uppercase">LeetCode Repetition</th>
-                    <th class="px-6 py-3 text-left text-xs uppercase">Leet Repeet</th>
-                    <th class="px-6 py-3 text-left text-xs uppercase">Excel Sheet</th>
-                    <th class="px-6 py-3 text-left text-xs uppercase">Written Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-y-2 border-accent-color">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">Custom Review Intervals</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                  </tr>
-
-                  <tr class="border-b-2 border-accent-color bg-background-color">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">Native LeetCode Integration</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">Cross-Browser Syncing</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                  </tr>
-
-                  <tr class="border-y-2 border-accent-color bg-background-color">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">One-Click Problem Deletions</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">Displayed Review Dates</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">
-                      <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div id="FAQ" class="flex flex-col justify-center mb-44">
-          <div>
-            <div class="flex flex-col items-center gap-1">
-              <h2 class="text-4xl head-underline">Frequently Asked Questions</h2>
-              <p class="text-xl mb-5">
-                Find answers to common questions about the LeetCode Repetition extension.
-              </p>
-            </div>
-            <div class="max-w-3xl mx-auto space-y-4">
-              <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
-                  <p class="text-lg font-medium">
-                    Is the LeetCode Repetition extension free to use?
-                  </p>
-                  <img
-                    src="./static/dropdown.svg"
-                    alt="Toggle"
-                    class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180"
-                  />
-                </summary>
-                <div class="px-6 py-6 bg-accent-color">
-                  <p class="text-muted-foreground">
-                    Yes, the LeetCode Repetition extension is totally free to use - no strings
-                    attached. If you’d like to fuel more features and brighten my day, feel free to
-                    <a
-                      href="https://buymeacoffee.com/jmurrah"
-                      class="link-underline"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      buy me a coffee! ☕
-                    </a>
-                  </p>
-                </div>
-              </details>
-
-              <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
-                  <p class="text-lg font-medium">What LeetCode problems should I practice?</p>
-                  <img
-                    src="./static/dropdown.svg"
-                    alt="Toggle"
-                    class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180"
-                  />
-                </summary>
-                <div class="px-6 py-6 bg-accent-color">
-                  <p class="text-muted-foreground">
-                    I'd start with the NeetCode 150 problem list since it covers all the must-know
-                    LeetCode patterns! You can follow the
-                    <a
-                      href="https://neetcode.io/roadmap"
-                      class="link-underline"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      NeetCode roadmap 🚀
-                    </a>
-                    to know exactly which problems to work on next.
-                  </p>
-                </div>
-              </details>
-
-              <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
-                <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
-                  <p class="text-lg font-medium">How can I report bugs or suggest features?</p>
-                  <img
-                    src="./static/dropdown.svg"
-                    alt="Toggle"
-                    class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180"
-                  />
-                </summary>
-                <div class="px-6 py-6 bg-accent-color">
-                  <p class="text-muted-foreground">
-                    All bug reports and feature requests should be submitted in the
-                    <a
-                      href="https://github.com/leetcode-repetition/user-feedback"
-                      class="link-underline"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      user-feedback GitHub repository ✨
-                    </a>
-                    by following the specified instructions. If you have additional questions you
-                    can
-                    <a
-                      href="mailto:leetcode-repetition@murrah.dev"
-                      class="link-underline"
-                      title="Mail"
-                    >
-                      email me directly!
-                    </a>
-                  </p>
-                </div>
-              </details>
-            </div>
+          <div class="max-w-4xl">
+            <video id="demo-video" class="w-full h-auto rounded-xl border-2 border-accent-color" controls preload="auto"
+              poster="./static/leetcode-repetition.png">
+              <source src="./static/demo.mp4" type="video/mp4" />
+              Your browser doesn’t support HTML5 video.
+            </video>
           </div>
         </div>
       </div>
-    </main>
-    <footer></footer>
-  </body>
+
+      <div id="Features" class="flex flex-col justify-center gap-5">
+        <div class="flex flex-col items-center gap-1">
+          <h2 class="text-4xl head-underline">How LeetCode Repetition Stacks Up</h2>
+          <p class="text-xl">
+            A quick look at why our extension beats alternative methods for making LeetCode
+            patterns stick.
+          </p>
+        </div>
+        <div class="overflow-x-auto">
+          <div class="max-w-5xl mx-auto border-2 border-accent-color rounded-xl overflow-x-auto bg-white">
+            <table class="table-fixed min-w-full">
+              <colgroup>
+                <col class="w-1/5" />
+                <col class="w-1/5" />
+                <col class="w-1/5" />
+                <col class="w-1/5" />
+                <col class="w-1/5" />
+              </colgroup>
+
+              <thead>
+                <tr class="bg-primary-color">
+                  <th class="px-6 py-3 text-left text-xs uppercase">Feature</th>
+                  <th class="px-6 py-3 text-left text-xs uppercase">LeetCode Repetition</th>
+                  <th class="px-6 py-3 text-left text-xs uppercase">Leet Repeet</th>
+                  <th class="px-6 py-3 text-left text-xs uppercase">Excel Sheet</th>
+                  <th class="px-6 py-3 text-left text-xs uppercase">Written Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-y-2 border-accent-color">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">Custom Review Intervals</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                </tr>
+
+                <tr class="border-b-2 border-accent-color bg-background-color">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">Native LeetCode Integration</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">Cross-Browser Syncing</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                </tr>
+
+                <tr class="border-y-2 border-accent-color bg-background-color">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">One-Click Problem Deletions</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">Displayed Review Dates</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/cross.svg" alt="cross" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm">
+                    <img src="./static/check.svg" alt="check" class="inline-block h-6 w-6" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="FAQ" class="flex flex-col justify-center mb-44">
+        <div>
+          <div class="flex flex-col items-center gap-1">
+            <h2 class="text-4xl head-underline">Frequently Asked Questions</h2>
+            <p class="text-xl mb-5">
+              Find answers to common questions about the LeetCode Repetition extension.
+            </p>
+          </div>
+          <div class="max-w-3xl mx-auto space-y-4">
+            <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
+                <p class="text-lg font-medium">
+                  Is the LeetCode Repetition extension free to use?
+                </p>
+                <img src="./static/dropdown.svg" alt="Toggle"
+                  class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <div class="px-6 py-6 bg-accent-color">
+                <p class="text-muted-foreground">
+                  Yes, the LeetCode Repetition extension is totally free to use - no strings
+                  attached. If you’d like to fuel more features and brighten my day, feel free to
+                  <a href="https://buymeacoffee.com/jmurrah" class="link-underline" target="_blank" rel="noreferrer">
+                    buy me a coffee! ☕
+                  </a>
+                </p>
+              </div>
+            </details>
+
+            <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
+                <p class="text-lg font-medium">What LeetCode problems should I practice?</p>
+                <img src="./static/dropdown.svg" alt="Toggle"
+                  class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <div class="px-6 py-6 bg-accent-color">
+                <p class="text-muted-foreground">
+                  I'd start with the NeetCode 150 problem list since it covers all the must-know
+                  LeetCode patterns! You can follow the
+                  <a href="https://neetcode.io/roadmap" class="link-underline" target="_blank" rel="noreferrer">
+                    NeetCode roadmap 🚀
+                  </a>
+                  to know exactly which problems to work on next.
+                </p>
+              </div>
+            </details>
+
+            <details class="group border-2 border-accent-color rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between p-6 cursor-pointer bg-white">
+                <p class="text-lg font-medium">How can I report bugs or suggest features?</p>
+                <img src="./static/dropdown.svg" alt="Toggle"
+                  class="w-5 h-5 text-primary-color transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <div class="px-6 py-6 bg-accent-color">
+                <p class="text-muted-foreground">
+                  All bug reports and feature requests should be submitted in the
+                  <a href="https://github.com/leetcode-repetition/user-feedback" class="link-underline" target="_blank"
+                    rel="noreferrer">
+                    user-feedback GitHub repository ✨
+                  </a>
+                  by following the specified instructions. If you have additional questions you
+                  can
+                  <a href="mailto:leetcode-repetition@murrah.dev" class="link-underline" title="Mail">
+                    email me directly!
+                  </a>
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
