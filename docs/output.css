@@ -1218,6 +1218,12 @@ footer {
   font-weight: 700;
 }
 
+.step-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .step-container:hover .step-line {
   background-color: #FEA116;
 }
@@ -1273,12 +1279,6 @@ footer {
   .step-cards {
     margin-top: 12px;
   }
-
-  /* .step-cards > img {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-  } */
 
   .step-header {
     width: auto;
