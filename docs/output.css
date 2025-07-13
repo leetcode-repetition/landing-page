@@ -1235,8 +1235,10 @@ footer {
 }
 
 .step-cards > img {
-  width: 360px;
-  height: 210px;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 360 / 210;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1272,7 +1274,8 @@ footer {
 }
 
 @media (max-width: 1320px) {
-  #all-steps-container, .step-header {
+  #all-steps-container,
+  .step-header {
     flex-direction: column;
   }
 
