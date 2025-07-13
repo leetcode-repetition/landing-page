@@ -312,8 +312,9 @@ footer {
 
 .step-cards > img {
   width: 360px;
-  height: auto;
-  object-fit: contain;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 12px;
   border: 2px solid theme("colors.accent-color");
   background-color: theme("colors.accent-color");
@@ -353,11 +354,11 @@ footer {
     margin-top: 12px;
   }
 
-  .step-cards > img {
+  /* .step-cards > img {
     width: 100%;
     max-width: 360px;
     height: auto;
-  }
+  } */
 
   .step-header {
     width: auto;
@@ -421,6 +422,59 @@ footer {
   #nav-links {
     flex-basis: 50% !important;
   }
+  
+  .head-underline::after,
+  .link-underline::after,
+  .intro-underline::after {
+    content: none;
+  }
+
+  .step-cards p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .description-text {
+    font-size: 18px;
+  }
+
+  .text-lg {
+    font-size: 16px;
+  }
+
+  .step-number {
+    font-size: 24px;
+    border-width: 3px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .head-underline {
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: theme("colors.primary-color");
+    text-decoration-thickness: 5px !important;
+    text-underline-offset: 1px;
+    text-underline-offset: -4px;
+    text-decoration-skip-ink: none;
+  }
+  
+  .link-underline {
+    text-decoration: underline;
+    text-decoration-color: theme("colors.secondary-color");
+    text-decoration-thickness: 4px;
+    text-underline-offset: 1px;
+    text-underline-offset: -3px;
+    text-decoration-skip-ink: none;
+  }
+  
+  .intro-underline {
+    text-decoration: underline;
+    text-decoration-color: theme("colors.secondary-color");
+    text-decoration-thickness: 7px;
+    text-underline-offset: -4px;
+    text-decoration-skip-ink: none;
+  }
 }
 
 @media (max-width: 540px) {
@@ -428,8 +482,8 @@ footer {
     flex-wrap: wrap;
   }
 
-  #intro-header {
-    font-size: 36px !important;
+  h2#intro-header {
+    font-size: 48px !important;
   }
 
   .intro-underline::after {
